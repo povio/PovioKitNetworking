@@ -13,7 +13,7 @@
         <img src="https://img.shields.io/badge/Licence-MIT-red.svg" />
     </a>
     <a href="https://github.com/poviolabs/PovioKit/actions/workflows/Tests.yml" alt="Tests Status">
-        <img src="https://github.com/poviolabs/PovioKit/actions/workflows/Tests.yml/badge.svg" />
+        <img src="https://github.com/poviolabs/PovioKitNetworking/actions/workflows/Tests.yml/badge.svg" />
     </a>
 </p>
 
