@@ -8,14 +8,14 @@
 
 import Alamofire
 import Foundation
-import PovioKitCore
+import OSLog
 
 public final class AlamofireConsoleLogger: EventMonitor {
   public let queue = DispatchQueue(label: "com.alamofire.console.networklogger")
-  private let logger: (String) -> Void
+  private let logger: @Sendable (String) -> Void
   
-  public init(logger: @escaping (String) -> Void = { Logger.debug($0, line: -1) }) {
-    self.logger = logger
+  public init(logger: (@Sendable (String) -> Void)? = nil) {
+    self.logger = logger ?? { Logger(subsystem: "com.povio.networking", category: "network").debug("\($0)") }
   }
   
   public func request(_ request: Request, didCreateInitialURLRequest urlRequest: URLRequest) {

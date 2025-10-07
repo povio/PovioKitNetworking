@@ -8,7 +8,6 @@
 
 import Alamofire
 import Foundation
-import PovioKitCore
 
 public extension URLEncodedFormParameterEncoder {
   convenience init(

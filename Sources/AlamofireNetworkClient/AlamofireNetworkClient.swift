@@ -8,7 +8,6 @@
 
 import Foundation
 import Alamofire
-import PovioKitCore
 import PovioKitPromise
 
 public typealias URLEncoding = Alamofire.URLEncoding
@@ -206,7 +205,7 @@ public extension AlamofireNetworkClient {
   
   func cancelAllRequests(
     completingOnQueue queue: DispatchQueue,
-    completion: (() -> Void)?
+    completion: (@Sendable () -> Void)?
   ) {
     session.cancelAllRequests(
       completingOnQueue: queue,
