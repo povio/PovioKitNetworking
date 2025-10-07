@@ -23,7 +23,7 @@
 
 ## Packages
 
-| [AlamofireNetworkingClient](Resources/AlamofireNetworkingClient) | [PromiseKit](Resources/PromiseKit) |
+| [AlamofireNetworkingClient](Resources/AlamofireNetworkClient) | [PromiseKit](Resources/PromiseKit) |
 | :-: | :-: |
 
 ## Installation
